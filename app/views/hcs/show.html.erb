@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @hc.home %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @hc.contact %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @hc.about %>
+</p>
+
+<p>
+  <strong>Employment:</strong>
+  <%= @hc.employment %>
+</p>
+
+<p>
+  <strong>Services:</strong>
+  <%= @hc.services %>
+</p>
+
+<p>
+  <strong>Why:</strong>
+  <%= @hc.why %>
+</p>
+
+<%= link_to 'Edit', edit_hc_path(@hc) %> |
+<%= link_to 'Back', hcs_path %>

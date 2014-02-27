@@ -1,0 +1,41 @@
+<%= form_for(@hc) do |f| %>
+  <% if @hc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hc.errors.count, "error") %> prohibited this hc from being saved:</h2>
+
+      <ul>
+      <% @hc.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :home %><br>
+    <%= f.text_field :home %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br>
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :about %><br>
+    <%= f.text_field :about %>
+  </div>
+  <div class="field">
+    <%= f.label :employment %><br>
+    <%= f.text_field :employment %>
+  </div>
+  <div class="field">
+    <%= f.label :services %><br>
+    <%= f.text_field :services %>
+  </div>
+  <div class="field">
+    <%= f.label :why %><br>
+    <%= f.text_field :why %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
